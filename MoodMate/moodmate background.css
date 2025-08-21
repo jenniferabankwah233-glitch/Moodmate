@@ -1,0 +1,15 @@
+body.calm {
+  background: linear-gradient(to right, #a8edea, #fed6e3);
+}
+
+body.sad {
+  background: linear-gradient(to right, #3a6073, #16222a);
+}
+
+body.energetic {
+  background: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+body.dark {
+  background: linear-gradient(to right, #232526, #414345);
+}

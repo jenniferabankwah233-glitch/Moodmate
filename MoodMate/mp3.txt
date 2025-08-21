@@ -1,0 +1,31 @@
+function generateMood() {
+  const mood = document.getElementById("moodSelector").value;
+  const output = document.getElementById("output");
+  const audio = new Audio();
+
+  let vibe = "";
+  let audioSrc = "";
+
+  switch (mood) {
+    case "calm":
+      vibe = "Soft pads, gentle piano, ambient textures 🌙";
+      audioSrc = "audio/calm.mp3";
+      break;
+    case "sad":
+      vibe = "Minor chords, slow tempo, emotional strings 💧";
+      audioSrc = "audio/sad.mp3";
+      break;
+    case "energetic":
+      vibe = "Punchy drums, bright synths, fast rhythm ⚡";
+      audioSrc = "audio/energetic.mp3";
+      break;
+    case "dark":
+      vibe = "Heavy bass, eerie tones, cinematic tension 🌑";
+      audioSrc = "audio/dark.mp3";
+      break;
+  }
+
+  output.textContent = `Moodmate suggests: ${vibe}`;
+  audio.src = audioSrc;
+  audio.play();
+}
